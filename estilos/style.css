@@ -1,0 +1,134 @@
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-family: "Atkinson Hyperlegible Next", sans-serif; 
+}
+
+main{
+    flex: 1;
+}
+
+strong {
+    color: var(--cor-terciaria);
+}
+
+.text{
+    padding: 6% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px
+    
+}
+
+.cabecalho{
+    padding: 2% 0 0 20%;
+}
+
+.cabecalho .cabecalho-menu :hover{
+    color: var(--cor-secundaria);
+}
+
+.cabecalho-menu{
+    color: var(--cor-terciaria);
+    display: flex;
+    gap: 80px;
+    font-size: 1.375rem;
+    font-weight: 500;
+}
+
+.text__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+.text__content p {
+    font-size: 1.25rem;
+    color: #a2a2a2;
+}
+
+.text__content .btn {
+    color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.text__content .btn .instagram,
+.text__content .btn .behance {
+    /* background-color: #22d4fd; */
+    border: 2px solid var(--cor-terciaria);
+    text-align: center;
+    font-size: 0.875rem;
+    width: 180px;
+    border-radius: 12px;
+    padding: 14px 0;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+}
+
+.text__content .btn i {
+    color: var(--cor-terciaria);
+}
+
+.text__content .btn .instagram:hover {
+    background-color: var(--cor-hover);
+}
+
+.text__content .btn .behance:hover {
+    background-color: var(--cor-hover);
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    gap: 14px; 
+    padding: 24px;
+    color: #8c8c8c; 
+    background: linear-gradient(90deg, #000000, #272727, #000000);
+    text-align: center;
+}
+
+.rodape .btn :hover{
+    color: var(--cor-secundaria);
+    
+}
+
+.rodape .btn a {
+    padding: 4px;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .text {
+        flex-direction: column-reverse;
+    }
+
+    .text__content{
+        width: auto;
+    }
+}
